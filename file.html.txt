@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>د. علي حسين | طب وجراحة الفم والأسنان</title>
+    
+    <!-- Tailwind CSS for Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #0ea5e9, #2dd4bf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128c7e;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9647828951392" class="whatsapp-float" target="_blank" title="تواصل معنا عبر واتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black gradient-text">د. علي حسين</div>
+            <div class="hidden md:flex space-x-reverse space-x-8 font-semibold">
+                <a href="#home" class="hover:text-sky-600 transition">الرئيسية</a>
+                <a href="#about" class="hover:text-sky-600 transition">عن الدكتور</a>
+                <a href="#services" class="hover:text-sky-600 transition">الخدمات</a>
+                <a href="#contact" class="bg-sky-600 text-white px-6 py-2 rounded-full hover:bg-sky-700 transition">احجز موعدك</a>
+            </div>
+            <div class="md:hidden text-2xl"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden bg-white">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <img src="https://www.transparenttextures.com/patterns/cubes.png" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center z-10">
+            <div data-aos="fade-left" data-aos-duration="1000">
+                <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+                    ابتسامتك هي <br><span class="gradient-text">عنوان ثقتك</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                    د. علي حسين، بكالوريوس طب وجراحة الفم والأسنان. نقدم لكم أحدث تقنيات العناية بالأسنان بأعلى معايير الجودة والراحة لضمان ابتسامة صحية ومشرقة في قلب محافظة بابل.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-sky-600 text-white px-8 py-4 rounded-2xl font-bold text-lg hover:bg-sky-700 transition-all shadow-lg shadow-sky-200">احجز استشارتك الآن</a>
+                    <a href="#services" class="border-2 border-sky-600 text-sky-600 px-8 py-4 rounded-2xl font-bold text-lg hover:bg-sky-50 transition-all">خدماتنا</a>
+                </div>
+            </div>
+            <div class="relative" data-aos="zoom-in" data-aos-duration="1200">
+                <!-- صورة تعبيرية - يمكن استبدالها بصورة الدكتور -->
+                <img src="https://images.unsplash.com/photo-1629909606779-37a797687473?auto=format&fit=crop&q=80&w=600" 
+                     class="rounded-3xl shadow-2xl border-8 border-white relative z-10" alt="Dental Clinic">
+                <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl z-20" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-sky-600 font-black text-3xl">100%</div>
+                    <div class="text-sm text-slate-500 font-bold">رضا المرضى</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-black mb-4">عن <span class="text-sky-600">الدكتور علي حسين</span></h2>
+                <div class="w-20 h-1.5 bg-sky-600 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-2 gap-4" data-aos="fade-right">
+                    <div class="bg-white p-6 rounded-3xl shadow-sm text-center border border-slate-100">
+                        <i class="fa-solid fa-graduation-cap text-3xl text-sky-600 mb-3"></i>
+                        <h3 class="font-bold">بكالوريوس</h3>
+                        <p class="text-sm text-slate-500">طب وجراحة الفم والأسنان</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm text-center border border-slate-100 mt-8">
+                        <i class="fa-solid fa-award text-3xl text-sky-600 mb-3"></i>
+                        <h3 class="font-bold">خبرة واسعة</h3>
+                        <p class="text-sm text-slate-500">في أحدث التقنيات</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm text-center border border-slate-100">
+                        <i class="fa-solid fa-heart-pulse text-3xl text-sky-600 mb-3"></i>
+                        <h3 class="font-bold">عناية فائقة</h3>
+                        <p class="text-sm text-slate-500">بأدق التفاصيل</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm text-center border border-slate-100 mt-8">
+                        <i class="fa-solid fa-stethoscope text-3xl text-sky-600 mb-3"></i>
+                        <h3 class="font-bold">تشخيص دقيق</h3>
+                        <p class="text-sm text-slate-500">باستخدام التكنولوجيا</p>
+                    </div>
+                </div>
+                <div class="space-y-6" data-aos="fade-left">
+                    <p class="text-xl leading-relaxed text-slate-600">
+                        أؤمن بأن صحة الفم هي بوابة الصحة العامة. لذلك أحرص في عيادتي على تقديم تجربة علاجية مريحة وخالية من الألم، مع استخدام أحدث المواد والتقنيات العالمية لضمان نتائج تدوم طويلاً.
+                    </p>
+                    <p class="text-xl leading-relaxed text-slate-600">
+                        تخصصي في طب وجراحة الفم والأسنان يتيح لي تقديم حلول شاملة تبدأ من الفحص الدوري والوقاية وصولاً إلى الجراحات التجميلية والترميمية المعقدة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-black mb-4">خدماتنا <span class="text-sky-600">المتميزة</span></h2>
+                <div class="w-20 h-1.5 bg-sky-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors">
+                        <i class="fa-solid fa-tooth text-3xl text-sky-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">تبييض الأسنان</h3>
+                    <p class="text-slate-600">استعد بياض أسنانك الطبيعي باستخدام أحدث تقنيات التبييض الليزري الآمنة.</p>
+                </div>
+                <div class="service-card p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors">
+                        <i class="fa-solid fa-magic text-3xl text-sky-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">ابتسامة هوليوود</h3>
+                    <p class="text-slate-600">تصميم ابتسامة مثالية تتناسب مع ملامح وجهك باستخدام الفينير والزيركون.</p>
+                </div>
+                <div class="service-card p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-sky-600 transition-colors">
+                        <i class="fa-solid fa-syringe text-3xl text-sky-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">زراعة الأسنان</h3>
+                    <p class="text-slate-600">تعويض الأسنان المفقودة بأفضل الخامات العالمية وبأقل نسبة ألم ممكنة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-sky-600 rounded-full filter blur-3xl opacity-20 -mr-32 -mt-32"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div data-aos="fade-left">
+                    <h2 class="text-4xl font-black mb-6">هل أنت مستعد <br><span class="text-sky-400">لابتسامة جديدة؟</span></h2>
+                    <p class="text-slate-400 mb-8 text-lg">يمكنك التواصل معنا مباشرة أو حجز موعد عبر النموذج. نحن بانتظارك لتقديم أفضل رعاية لأسنانك.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-reverse space-x-4">
+                            <div class="w-12 h-12 bg-sky-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-phone"></i></div>
+                            <span class="text-xl font-bold">07828951392</span>
+                        </div>
+                        <div class="flex items-center space-x-reverse space-x-4">
+                            <div class="w-12 h-12 bg-sky-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-location-dot"></i></div>
+                            <span class="text-xl font-bold">العراق - بابل - شوملي</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl text-slate-800 shadow-2xl" data-aos="fade-right">
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block font-bold mb-2">الاسم الكامل</label>
